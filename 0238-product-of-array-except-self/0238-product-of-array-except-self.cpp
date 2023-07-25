@@ -11,7 +11,7 @@ public:
         }
         for (i -= 1; i >= 0; i--)
         {
-            answer.at(i) = answer.at(i) * postfix;
+            answer.at(i) *= postfix;
             postfix *= nums[i];
         }
         return answer;   
